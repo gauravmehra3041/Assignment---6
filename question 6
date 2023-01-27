@@ -1,5 +1,5 @@
-# Assignment 6
-# Question 5
+
+
 
 print ("enter hyphen separated sequence of words" )
 sqw=input ()
