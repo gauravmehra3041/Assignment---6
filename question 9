@@ -1,0 +1,15 @@
+print ("enter a series of parantheses" )
+pnt=input ()
+for i in range (len(pnt)):
+  
+   if pnt[i]=='(' and pnt[i+1]!=')':
+      print ("\n invalid parantheses" )
+      break
+   elif pnt[i]=='{' and pnt[i+1]!='}':
+      print ("\n invalid parantheses" )
+      break
+   elif pnt[i]=='[' and pnt[i+1]!=']':
+      print ("\n invalid parantheses" )
+      break
+   elif i==len(pnt)-1:
+       print ("\nthese are correct set of parantheses" )
