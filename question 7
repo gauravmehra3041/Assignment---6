@@ -1,0 +1,15 @@
+# Question 7
+
+class student ():
+   pass
+
+class marks ():
+  pass
+
+S1=student ()
+print ("class of S1 is ->  " )
+print (type (S1),"\n" )
+
+m1=marks ()
+print ("class of m1 is -> " )
+print (type (m1))
