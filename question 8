@@ -1,0 +1,22 @@
+def fun(inp,oup,sum_):
+   
+    a=list(oup)
+   
+    if len(inp)==0:
+       if len(oup)!=0 and sum_==0:
+        print (oup)
+       return 
+        
+    fun(inp[1:],oup,sum_)
+    a. append (inp[0])
+    fun(inp[1:],a,sum_+inp[0])
+    
+   
+   
+
+
+a=[-3,0,3]
+b=[]
+ans=[]
+
+fun(a,b,0)
