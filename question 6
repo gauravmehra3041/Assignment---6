@@ -1,0 +1,34 @@
+# Assignment 6
+# Question 5
+
+print ("enter hyphen separated sequence of words" )
+sqw=input ()
+dict_={}
+use=""
+count=1
+index=1
+for i in sqw:
+  if i=="-":
+    dict_.update({index:use})
+    use=""
+    index+=1 
+    count +=1
+    continue 
+  use+=i
+  if count==len(sqw):
+    dict_.update({index:use})
+  count+=1
+n=index
+
+
+for j in range (1,n+1):
+   for k in range (1,n):
+     if dict_[k+1]<dict_[k]:
+       a=dict_[k]
+       dict_.update({k:dict_[k+1]})
+       dict_.update({k+1:a})
+print ()
+for m in range (1,n+1):
+ if m>1:
+  print ("-",end=""  )
+ print (dict_[m],end="" )
